@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block lab %}РГЗ Вариант 11{% endblock %}
+
+
+{% block main %}
+<form method="POST">
+    <div>
+        <input type ="text" name ="name_p" placeholder="name">
+        <label for = "username"> Введите имя человека</label>
+    </div>
+    <div>
+        <input type ="text" name ="text_p" placeholder="text" > 
+    </div>
+    <button tipe="submit" >Отправить сообщение человеку</button>
+
+        <div>{{errors}}</div>
+</form>
+
+{% endblock %}
